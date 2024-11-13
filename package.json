@@ -1,9 +1,10 @@
 {
   "name": "book_review_app_backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for Book Review App",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,5 +15,10 @@
     "express": "^4.21.1",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
+  },
+  "pnpm": {
+    "overrides": {
+      "debug": "^4.3.1"
+    }
   }
 }
