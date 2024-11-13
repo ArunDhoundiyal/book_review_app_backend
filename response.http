@@ -1,0 +1,29 @@
+POST http://localhost:3005/create_book_review/
+Content-Type: application/json 
+
+{
+    "id": "70819203-1234-56jj-7890-123456q12345",
+    "bookTitle": "Anna Karenina",
+    "bookAuthor": "Anna Karenina",
+    "bookReview": "A story of love, betrayal, and societal expectations.",
+    "reviewerName": "Noah Walker",
+    "rating": "4"
+}
+
+
+###
+
+GET http://localhost:3005/read_books_review/?sort=NORMAL&pageNo=1&search=Anna
+
+### 
+
+PUT http://localhost:3005/edit_book/70819203-1234-56jj-7890-123456q12345
+Content-Type: application/json
+
+{
+    "rating":"3"
+}
+
+### 
+
+DELETE http://localhost:3005/delete_book/70819203-1234-56jj-7890-123456q12345
